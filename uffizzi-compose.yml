@@ -8,6 +8,8 @@ services:
     build:
       context: https://github.com/MydriveBot/Demo-vercel
       dockerfile: Dockerfile
+    mysevice:
+      env_file: ./config.env  
    
     deploy:
       resources:
