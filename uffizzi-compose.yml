@@ -5,9 +5,8 @@ x-uffizzi:
 
 services:
   app:
-    build:
-      context: Dockerfile
-      dockerfile: Dockerfile
+    build: .
+
     environment: 
       NODE_ENV: staging
 
