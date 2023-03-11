@@ -6,11 +6,12 @@ x-uffizzi:
 services:
   app:
     build:
-      context: https://github.com/MydriveBot/Demo-vercel
       dockerfile: Dockerfile
-    mysevice:
-      env_file: ./config.env  
+    environment: 
+      NODE_ENV: staging
+
     restart: always 
+    
     ports:
       - "8080:8080"
     privileged: true
