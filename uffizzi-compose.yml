@@ -1,3 +1,8 @@
+x-uffizzi:
+  ingress:
+    service: app
+    port: 8080
+
 services:
   app:
     build:
