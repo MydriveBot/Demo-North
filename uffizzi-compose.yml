@@ -6,7 +6,7 @@ x-uffizzi:
 services:
   app:
     build:
-      context: https://github.com/example/app
+      context: https://github.com/MydriveBot/Demo-vercel
       dockerfile: Dockerfile
    
     deploy:
