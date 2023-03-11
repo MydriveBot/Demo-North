@@ -10,8 +10,16 @@ services:
       dockerfile: Dockerfile
     mysevice:
       env_file: ./config.env  
+    restart: always 
+    ports:
+      - "8080:8080"
+    privileged: true
+    depends_on:
+      - app
+  
    
     deploy:
       resources:
         limits:
           memory: 500M
+          
